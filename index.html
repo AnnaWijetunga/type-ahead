@@ -22,7 +22,8 @@ const cities = [];
 
 // fetch data using fetch
 // fetch will return a promise (not the data) 
-fetch(endpoint).then()
+// the data coming back is json, which we know but the system doesn't - we have to convert the raw data into json
+fetch(endpoint).then(blob => blob.json);
 
 </script>
 </body>
