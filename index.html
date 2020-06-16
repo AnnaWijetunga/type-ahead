@@ -41,6 +41,11 @@ function findMatches(wordToMatch, cities) {
     })
 }
 
+// give us the commas in the population
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?={\d{3})+(?!\d))/g, ',');
+}
+
 function displayMatches() {
     // called when someone updates the value
     const matchArray = findMatches(this.value, cities);
