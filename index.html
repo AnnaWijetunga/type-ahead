@@ -32,7 +32,13 @@ fetch(endpoint)
 function findMatches(wordToMatch, cities) {
     return cities.filter(place => {
         // figure out if the city or state match what was searched for
-        
+
+        // regex:
+        // g = global, i = insenitive (upper/lowercase)
+        const regex = new RegExp(wordToMatch, 'gi')
+
+        // we have to put a variable in a regular expression
+        return place.city.match()
     })
 }
 
