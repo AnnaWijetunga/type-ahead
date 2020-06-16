@@ -25,7 +25,8 @@ const cities = [];
 // the data coming back is json, which we know but the system doesn't - we have to convert the raw data into json
 fetch(endpoint)
     .then(blob => blob.json())
-    .then()
+    // use spread operator to spread the new data into the existing, spreading into this push method to give us proper cities - array of 1000 different cities
+    .then(data => cities.push(...data))
 
 </script>
 </body>
