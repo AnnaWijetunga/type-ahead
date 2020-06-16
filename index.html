@@ -43,7 +43,8 @@ function findMatches(wordToMatch, cities) {
 
 function displayMatches() {
     // called when someone updates the value
-    console.log(this.value)
+    const matchArray = findMatches(this.value, cities);
+    console.log(matchArray);
 
 }
 
