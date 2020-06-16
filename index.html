@@ -51,7 +51,10 @@ const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
 // listen for "change" and then run findMatches
-searchInput.addEventListener('change', findMatches)
+// change event only applies when you go OFF the input
+searchInput.addEventListener('change', displayMatches)
+// every time you keyup
+searchInput.addEventListener('keyup', displayMatches)
 
 </script>
 </body>
