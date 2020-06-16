@@ -35,10 +35,9 @@ function findMatches(wordToMatch, cities) {
 
         // regex:
         // g = global, i = insenitive (upper/lowercase)
-        const regex = new RegExp(wordToMatch, 'gi')
-
+        const regex = new RegExp(wordToMatch, 'gi');
         // we have to put a variable in a regular expression
-        return place.city.match()
+        return place.city.match(regex) || place.state.match(regex);
     })
 }
 
