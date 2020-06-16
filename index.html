@@ -28,6 +28,14 @@ fetch(endpoint)
     // use spread operator to spread the new data into the existing, spreading into this push method to give us proper cities - array of 1000 different cities
     .then(data => cities.push(...data))
 
+// new function to take in the word to match and the array of cities
+function findMatches(wordToMatch, cities) {
+    return cities.filter(place => {
+        // figure out if the city or state match what was searched for
+        
+    })
+}
+
 </script>
 </body>
 </html>
