@@ -53,7 +53,10 @@ function displayMatches() {
                 <span class="population">${place.population}</span>
             </li>
         `;
-    });
+        // this .map above will return an array, but we want to return a string
+        // now it will be one big string
+    }).join('');
+    suggestions.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.search');
